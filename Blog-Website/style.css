@@ -1,0 +1,364 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  background-color: white;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  font-size: 50px;
+  /* Uniform font size throughout */
+  line-height: 1.6;
+}
+
+/* Fixed Header */
+header.fixed-top {
+  background-color: #1e90ff;
+  /* Dodger Blue */
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+header .navbar a:hover {
+  text-decoration: underline;
+}
+
+#nav-right {
+  display: flex;
+  gap: 15px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+/* Main Content and Sections */
+main {
+  margin-top: 70px;
+  /* To compensate for the fixed header */
+  padding: 20px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+#articles {
+  background-color: #f0f8ff;
+  /* Alice Blue */
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.blog-heading {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.article {
+  border: 1px solid #1e90ff;
+  /* Dodger Blue */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.article-img {
+  width: 100%;
+  height: auto;
+}
+
+.article-body {
+  padding: 15px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.article-title {
+  color: #1e90ff;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.article-title:hover {
+  text-decoration: underline;
+}
+
+.article-actions {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.article-actions li {
+  cursor: pointer;
+}
+
+.load {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.load:hover {
+  background-color: #4682b4;
+  /* Steel Blue */
+}
+
+/* About Me Section */
+#about-me {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1e90ff;
+}
+
+.about-text {
+  max-width: 45%;
+  /* Reduced to give more space to the image */
+  flex-basis: 45%;
+  /* Ensures a consistent distribution */
+  padding-right: 20px;
+  /* Additional padding to prevent overlap */
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.about-text h1 {
+  font-size: 50px;
+  /* Consistent font size */
+  color: #fff;
+}
+
+.about-text h4 {
+  color: #666;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+#contactMeBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 5px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+#contactMeBtn:hover {
+  background-color: #0056b3;
+}
+
+.about-image {
+  max-width: 45%;
+  /* Increased to balance the image and text */
+  flex-basis: 45%;
+  /* Ensures a consistent distribution */
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Aside (Newsletter Section) */
+aside {
+  background-color: #f0f8ff;
+  /* Alice Blue */
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1e90ff;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #1e90ff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.card-body {
+  text-align: center;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.sub-btn {
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 32px;
+  margin: 4px 2px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.sub-btn:hover {
+  background: #0056b3;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.modal-content {
+  background: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+.large-input {
+  width: 100%;
+  /* Fill the width of the parent container */
+  padding: 12px;
+  /* Increase padding for a larger size */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 5px;
+  /* Rounded corners */
+  box-sizing: border-box;
+  /* Include padding and border in width calculation */
+  font-size: 20px;
+  /* Adjust font size */
+}
+
+
+.close {
+  color: #aaa;
+  font-size: 50px;
+  /* Consistent font size */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+}
+
+/* Footer Styling */
+footer {
+  background: #1e90ff;
+  padding: 20px 40px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+footer .back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+footer .back-to-top span {
+  margin-left: 5px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+footer .footer-content {
+  margin-top: 20px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+footer .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+footer .input-group {
+  flex-direction: column;
+  gap: 10px;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+footer button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+  font-size: 50px;
+  /* Consistent font size */
+}
+
+footer button:hover {
+  background: #0056b3;
+}

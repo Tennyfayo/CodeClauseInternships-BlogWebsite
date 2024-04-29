@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blogsite</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="asset/logo.png" type="image/x-icon" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header id="header" class="fixed-top">
+      <div class="container">
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+          <a href="#" aria-label="Home">
+            <span id="p-blog">Blogsite</span>
+          </a>
+          <div id="nav-right">
+            <a href="#articles">Articles</a>
+            <a href="#about-me">About Me</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="articles" aria-label="Articles">
+        <div class="blog-heading">
+          <h4>Latest Blog Post</h4>
+        </div>
+        <br />
+        <div class="articles-content">
+          <!-- First Container -->
+          <div class="article">
+            <img
+              src="asset/download.jpg"
+              class="article-img"
+              alt="Wearable technology"
+            />
+            <div class="article-body">
+              <a
+                href="asset/article1.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h5 class="article-title">
+                  The Future of Wearable Technology: Beyond Smartwatches
+                </h5>
+              </a>
+              <p>
+                Explore the latest trends in wearable tech, including smart
+                clothing, biometric devices, and health-tracking gadgets.
+                Discuss how wearables are evolving and what future innovations
+                might look like
+              </p>
+            </div>
+          </div>
+
+          <!-- Second Container -->
+          <div class="article">
+            <img
+              src="asset/download (1).jpg"
+              class="article-img"
+              alt="Tech Gadgets"
+            />
+            <div class="article-body">
+              <a
+                href="asset/article2.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h5 class="article-title">
+                  Tech Gadgets That Feel Like They are from a Sci-Fi Movie
+                </h5>
+              </a>
+              <p>
+                Examine cutting-edge tech gadgets that seem straight out of
+                science fiction, such as augmented reality glasses,
+                voice-activated assistants, and holographic displays. Discuss
+                their real-world applications and how they are shaping the
+                future.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <button class="load" id="loadMoreBtn">Load More</button>
+      </section>
+      <br />
+      <section id="about-me" aria-label="About Me">
+        <div class="about-container">
+          <div class="about-text">
+            <h1>Hi 🖐️,</h1>
+            <h1>I'm <span>Osomo Oluwatenifayo</span>.</h1>
+            <h4>A passionate Web Developer based in Lagos, Nigeria.</h4>
+            <button id="contactMeBtn">Contact me</button>
+          </div>
+          <div class="about-image">
+            <img src="asset/about-image.jpg" alt="Osomo Oluwatenifayo" />
+          </div>
+        </div>
+      </section>
+      <br />
+      <aside aria-label="Contact Information">
+        <h4>Newsletter</h4>
+        <div class="card text-center">
+          <div class="card-body">
+            <p>
+              Subscribe to our newsletter for exclusive content and the latest
+              updates. Stay connected with valuable insights delivered straight
+              to your inbox.
+            </p>
+            <button class="btn sub-btn" id="subscribeBtn">Subscribe</button>
+          </div>
+        </div>
+
+        <!-- Subscription Modal -->
+
+        <div id="subscribeModal" class="modal">
+          <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Subscribe to Our Newsletter</h2>
+            <form>
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                class="large-input"
+                placeholder="Enter your email"
+                required
+              />
+              <input type="submit" value="Subscribe" />
+            </form>
+          </div>
+        </div>
+      </aside>
+      <br />
+      <footer>
+        <!-- Back to Top Button -->
+        <div
+          class="back-to-top"
+          role="button"
+          aria-label="Back to Top"
+          onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        >
+          <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+          <span>Back to Top</span>
+        </div>
+
+        <!-- Footer Content -->
+        <div class="footer-content">
+          <h1>Let Me Know What You Think</h1>
+          <p>We'd love to hear your thoughts, suggestions, and feedback.</p>
+          <p>Drop a Comment</p>
+
+          <!-- Contact Form -->
+          <form class="contact-form" action="/submit-feedback" method="post">
+            <!-- Name Inputs -->
+            <div class="input-container">
+              <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first_name"
+                  placeholder="Enter your first name"
+                  required
+                  class="large-input"
+                />
+              </div>
+              <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last_name"
+                  placeholder="Enter your last name"
+                  required
+                  class="large-input"
+                />
+              </div>
+            </div>
+
+            <!-- Email Input -->
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+                class="large-input"
+              />
+            </div>
+
+            <!-- Message Textarea -->
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Write your message here"
+                rows="4"
+                cols="5"
+                required
+                class="large-input"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-button">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

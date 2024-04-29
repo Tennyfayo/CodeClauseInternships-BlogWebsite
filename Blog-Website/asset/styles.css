@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333; /* General text color */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white; /* Link color matching the header */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Visual cue for hover */
+}
+
+header {
+    background-color: #1e90ff; /* Dodger blue background */
+    color: white;
+    padding: 15px 20px; /* Extra padding for better spacing */
+    position: sticky; /* Keep the header at the top when scrolling */
+    top: 0;
+    z-index: 1000; /* High z-index to ensure it stays on top */
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#p-blog {
+    font-size: 1.5rem; /* Blog title size */
+    font-weight: bold;
+    text-transform: uppercase; /* Ensures uniform look */
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #1e90ff; /* Header should match the primary color */
+    font-size: 2rem; /* Larger size for h1 */
+}
+
+h2 {
+    font-size: 1.5rem; /* Slightly smaller than h1 */
+    color: #333; /* Darker than h1 to differentiate hierarchy */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333; /* Consistent text color */
+}
+
+.article-img {
+    width: 100%; /* Make the image take the full width */
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners to images */
+}
+
+/* Styles for the article actions */
+.article-actions {
+    list-style: none; /* Removes default bullet points */
+    display: flex; /* Arrange items in a row */
+    gap: 10px; /* Spacing between icons */
+}
+
+.article-actions li {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.article-actions li:hover {
+    color: #45a049; /* Change color on hover */
+}
+
+/* Footer Styling */
+footer {
+  background: #1e90ff;
+  padding: 20px 40px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+footer .back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+footer .back-to-top span {
+  margin-left: 5px;
+}
+
+footer .footer-content {
+  margin-top: 20px;
+}
+.footer-content, h3 {
+  color: #f0f8ff;
+}
+footer .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+}
+
+footer .input-group {
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .input-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+footer input,
+footer textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+footer button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background: #1e90ff;
+  color: white;
+}
+
+footer button:hover {
+  background: #45a049;
+}
